@@ -132,12 +132,89 @@ my_list = ["Cat", "Dog", "Elephant", "Fox", "Tiger", "Lion", "Ponda"]
 my_list = [2,4,56,78,4,34,5,8,9,2,2,4,4,5]
 
 a = sorted(set(my_list))
-print(a)
-# print(a[0])
-print(a[1])
+# print(a)
+# # print(a[0])
+# print(a[1])
 # print(a[-1])
 
 
+# 23. Write a Python program to find the second largest number in a list
 
- 
+my_list = [82,4,56,78,4,34,5,100,9]
+
+a = sorted(my_list,reverse=True)[1]
+# print(a)
+
+# 24. Write a Python program to get unique values from a list
+
+my_list = [82, 4, 10, 56, 78, 4, 34, 5, 10, 9]
+# print(list(set(my_list)))
+
+# 25. Write a Python program to get the frequency of the elements in a list.
+
+my_list = [10, 30, 50, 10, 20, 60, 20, 60, 40, 40, 50, 50, 30]
+my_dict={}
+for i in my_list:
+    my_dict[i] = my_list.count(i)
+# print(my_dict)
+
+# 26. Create a list by concatenating a given list which range goes from 1 to n
+my_list = ['T', 'J']
+N = 10
+list2=[]
+# for i in range(1,11):
+#     list2.extend([my_list[0]+str(i)])
+#     list2.extend([my_list[1]+str(i)])
+  
+# print(list2)
+
+# for i in range(1,11):
+#     for t in my_list:
+#         list2.append(t+str(i))
+        
+# print(list2)
+
+# 27. Write a Python program to get variable unique identification number or string
+
+x = 30
+
+s = "Tutor Joes"
+
+# print(f'{x}: identification: {id(x)}')
+# print(format(id(x), 'x'))
+
+# 28. Write a Python program to find common items from two lists
+my_list1 = [23,45,67,78,89,34]
+
+my_list2 = [34,89,55,56,39,67]
+my_list3 = []
+for l1 in my_list1:
+    for l2 in my_list2:
+        if l1 == l2:
+            my_list3.append(l1)
+# print(my_list3) 
+# print(list(set(my_list2).intersection(my_list1)))
+# print(list(set(my_list1) & set(my_list2)))
+
+# 29. Write a Python program to split a list based on first character of word
+my_list = ["cat", "dog", "cow", "tiger", "lion", "Fox", "Shark", "Snake",
+           "turtle", "mouse", "monkey", "bear"]
+
+# sorted_list = sorted(my_list)
+# for i in sorted_list:
+#     print(i[0])
+#     for j in sorted_list:
+#         if j.startswith(i[0]):
+#             print("  ", j)
+            
+# 30. Write a Python program to select the odd number of a list
+
+my_list = [1,2,4,3,6,7,5,8,9,7,8,9,10]
+a = [a for a in my_list if a%2!=0]
+# print(a)
+
+            
+    
+    
+
 

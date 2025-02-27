@@ -77,6 +77,13 @@ my_dict = {"Name" : "Ram" , "Age" : 23 , "City" : "Salem", "Gender" : "Male"}
 # 11. Access dictionary key’s element by index.
 my_dict = {"Name" : "Pooja", "Age" : 23, "Gender" : "Female", "City" : "Salem", "Mark" : 488}
 
-for i in my_dict.keys():
-    print(i)
-x = [x for x in my_dict.keys()]
+# for i in my_dict.keys():
+#     print(i)
+# x = [x for x in my_dict.keys()]
+
+# 12. Drop empty Items from a given Dictionary
+my_dict = {'Name' : 'Pooja', 'Age' : 23, 'Gender' : None, 'Mark' : 488, 'City' : None}
+
+my_dict = {k:v for (k,v) in my_dict.items() if v != None}
+# print(my_dict)
+    

@@ -9,5 +9,12 @@ print("Compare List1 and List3 : ",' '.join(map(str, list3)) in ' '.join(map(str
 # print(list1 + list1)
 print((map(str, list2)) in (map(str, list1 * 2)))
 
-print("".join((map(str, list2))))
+print(" ".join((map(str, list2))))
 print(' '.join(map(str, list1 *2)))
+
+# combined_tuple
+tuple1 = (1, 2)
+tuple2 = (3, 4)
+combined_tuple = tuple1 + tuple2
+print(combined_tuple)
+
