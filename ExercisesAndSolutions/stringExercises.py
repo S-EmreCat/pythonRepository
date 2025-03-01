@@ -71,8 +71,29 @@ my_string = "Tutor Joes"
 
 # 10. Write a Python function to reverses a string if it's length is a multiple of 4.
 
-my_string = input("enter the string: ")
-if len(my_string) % 4 == 0:
-    print(f"the length is a multiple of 4 {my_string[::-1]}")
-else: 
-    print("the length is not a multiple of 4 {}".format(my_string))
+# my_string = input("enter the string: ")
+# if len(my_string) % 4 == 0:
+#     print(f"the length is a multiple of 4 {my_string[::-1]}")
+# else: 
+#     print("the length is not a multiple of 4 {}".format(my_string))
+    
+# 11. Write a Python function to convert a given string to all uppercase 
+# if it contains at least 2 uppercase characters in the first 4 characters.
+
+my_string = "ComPuTeR"
+count = 0
+# for i in my_string[0:4]:
+#     if i == i.upper():
+#         count += 1
+# if count >= 2:
+#     my_string  = my_string.upper()
+#     print(my_string) # "ComPuTeR" >  COMPUTER
+# else:
+#     print(my_string) # "CompuTeR" > "CompuTeR"
+    
+# 12. Write a Python program to sort a string lexicographically.
+my_string = "Tutor"
+print(sorted([i.lower() for i in my_string ]))
+print(sorted(sorted(my_string), key=str.upper))
+
+

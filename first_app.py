@@ -1,1 +1,1 @@
-print("Hello, World!")
+print("01.03.2025")
