@@ -93,7 +93,47 @@ count = 0
     
 # 12. Write a Python program to sort a string lexicographically.
 my_string = "Tutor"
-print(sorted([i.lower() for i in my_string ]))
-print(sorted(sorted(my_string), key=str.upper))
+# print(sorted([i.lower() for i in my_string ]))
+# print(sorted(sorted(my_string), key=str.upper))
 
+# 13. Write a Python program to remove a newline in Python.
+my_string = "\nTutor \nJoes \nComputer \nEducation\n"
+# print(f'before: {my_string}')
+# my_string = " ".join(my_string.split())
+# print(f'after: {my_string}')
+
+# 14. Write a Python program to check whether a string starts with specified characters.
+my_string = "Tutor Joes Computer Education"
+# print(my_string.startswith('Tu'))
+
+# 18. Write a Python program to print the following floating numbers upto 2 decimal places.
+floatNumber = -84.99
+# print(round(floatNumber,2))
+# floatNumber = 23.36778
+# print(round(floatNumber,2))
+
+# 20. Write a Python program to print the following floating numbers with no decimal places
+floatNumber = 23.36778
+# print(round(int(floatNumber)))
+
+# 22. Write a Python program to reverse a string.
+my_string = "Python Exercises"
+# print(my_string[::-1])
+
+
+# 23. Write a Python program to reverse words in a string.
+my_string = "Tutor Joes Computer Educations"
+my_string = my_string.split()
+# print(" ".join(my_string[::-1]).strip())  # Educations Computer Joes Tutor
+
+# 24. Write a Python program to strip a set of characters from a string.
+my_string = "Tutor Joes Computer Education"
+chrs ="aeiou"
+# print(" ".join(c for c in my_string if c not in chrs))
+
+# 26. Write a Python program to swap comma and dot in a string.
+val = "23,2000.00"
+maketrans = val.maketrans
+val = val.translate(maketrans(',.', '.,'))
+print("After Swap Comma and Dot : ",val)
 

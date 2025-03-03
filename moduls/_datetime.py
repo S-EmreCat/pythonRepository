@@ -46,4 +46,31 @@ print(simdi)
 
 result = simdi - timedelta(days = 10)
 
-print(result)
+"""# Import the time module
+import time
+# Import the datetime module
+import datetime
+
+# Print the current date and time using datetime
+print("Current date and time: " , datetime.datetime.now())
+
+# Print the current year extracted from today's date
+print("Current year: ", datetime.date.today().strftime("%Y"))
+
+# Print the month of the year extracted from today's date
+print("Month of year: ", datetime.date.today().strftime("%B"))
+
+# Print the week number of the year extracted from today's date
+print("Week number of the year: ", datetime.date.today().strftime("%W"))
+
+# Print the weekday of the week extracted from today's date
+print("Weekday of the week: ", datetime.date.today().strftime("%w"))
+
+# Print the day of the year extracted from today's date
+print("Day of year: ", datetime.date.today().strftime("%j"))
+
+# Print the day of the month extracted from today's date
+print("Day of the month : ", datetime.date.today().strftime("%d"))
+
+# Print the day of the week extracted from today's date
+print("Day of week: ", datetime.date.today().strftime("%A")) """

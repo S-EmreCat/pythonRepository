@@ -213,8 +213,29 @@ my_list = [1,2,4,3,6,7,5,8,9,7,8,9,10]
 a = [a for a in my_list if a%2!=0]
 # print(a)
 
-            
-    
+# 31. Write a Python Program to count unique values inside a list
+
+my_list = [10, 20, 30, 50, 80, 70, 70, 80, 10]
+# print(len(set(my_list)))
     
 
+# 32. Write a Python Program to List product excluding duplicates
+# my_list = [2, 1, 2, 4, 6, 4, 3, 2, 1]
+# eList = []
 
+# b=list(set(my_list))
+# print(b)
+# p=1
+# for i in b:
+# 	p*=i
+# print ("Duplication removal list product : " + str(p))    
+    
+# 33. Write a Python Program to Extract elements with Frequency greater than K = 2
+k=2
+my_list = [4, 6, 4, 3, 3, 4, 3, 7, 8, 8]
+count = 0
+flist=[]
+for i in my_list:
+    if my_list.count(i) > k and i not in flist:
+        flist.append(i)
+print(str(flist))
