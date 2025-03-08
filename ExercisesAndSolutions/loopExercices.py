@@ -149,3 +149,27 @@ list1 = [10, 20, 30, 40, 50]
 # number = int(input("enter number: "))
 # for i in range(number+1):
 #     print(f'number: {i} and cube is: {i**3} ')
+
+# Exercise 18: Print the following pattern
+"""
+* 
+* * 
+* * * 
+* * * * 
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+"""
+
+for i in range(4):
+    for j in range(i+1):
+        print("*",end=" ")
+    print("")
+
+for i in range(4,-1,-1):
+    for j in range(i+1):
+        print("*",end=" ")
+    print("")
+    
