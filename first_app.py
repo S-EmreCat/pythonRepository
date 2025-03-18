@@ -1,5 +1,5 @@
-x = float(2.45)
-x = 2.56
-x = "Hello".upper()
-print(type(x))
-print((x))
+let = 88
+let = 92 
+final = let + let * 66
+print(let)
+print(final)
